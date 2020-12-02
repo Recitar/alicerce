@@ -1,0 +1,243 @@
+header {
+    padding: 156px 0 100px;
+  }
+  
+  section {
+    padding: 150px 0;
+  }
+  
+  
+  
+  #main-text{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  
+  #main-text img{
+    background-color: transparent;
+    height: 15rem;
+  }
+  
+  #chat-list {
+      padding: 0;
+      font-size: 0.9rem;
+  }
+  
+  #chat-list li {
+      margin-bottom: 10px;
+      overflow: auto;
+  }
+  
+  #chat-list .chat-img {
+      float: left;
+      width: 48px;
+  }
+  
+  #chat-list .chat-img img {
+      border-radius: 50px;
+      width: 100%;
+  }
+  
+  #chat-list .chat-message {
+      border-radius: 10px;
+      display: inline-block;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 5px;
+  
+  }
+  
+  #chat-list .chat-message:before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      width: 0;
+      height: 0;
+  }
+  
+  #chat-list .chat-message h5 {
+      margin: 0 0 5px 0;
+      font-weight: 600;
+      line-height: 100%;
+      font-size: 1rem;
+  }
+  
+  #chat-list .chat-message p {
+      line-height: 18px;
+      margin: 0;
+      padding: 0;
+  }
+  
+  #chat-list .chat-body {
+      margin-left: 20px;
+      float: left;
+      width: 70%;
+  }
+  
+  /*pontinha da mensagem do bot*/
+  #chat-list .bot .chat-message:before {
+      left: -15px;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #eee;
+  }
+  
+  #chat-list .user .chat-img {
+      float: right;
+  }
+  
+  #chat-list .user .message-time{
+    float: right;
+    color: #eee;
+  }
+  
+  #chat-list .user .chat-body {
+      float: right;
+      margin-right: 20px;
+      text-align: right;
+      color: #fff;
+  }
+  
+  #chat-list .user .msg-content{
+    text-align: left;
+    float: left;
+  }
+  
+  #chat-list .bot .chat-message{
+      background: #eee;
+  }
+  
+  #chat-list .user .chat-message {
+      background: rgb(71, 71, 71);
+  }
+  
+  #chat-list .user .chat-message:before {
+      right: -12px;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid rgb(71, 71, 71);
+  }
+  
+  .card .card-header:first-child {
+      -webkit-border-radius: 0.3rem 0.3rem 0 0;
+      -moz-border-radius: 0.3rem 0.3rem 0 0;
+      border-radius: 0.3rem 0.3rem 0 0;
+  }
+  
+  .card .card-header {
+      background: #000000;
+      border: 0;
+      font-size: 1rem;
+      padding: .65rem 1rem;
+      position: relative;
+      font-weight: 600;
+      color: #ffffff;
+  }
+  
+  
+  .card-body{
+      height: 480px;
+      background-image: url(/static/img/bg.png);
+      overflow-y: auto;
+  }
+  
+  
+  #input_msg_write textarea {
+    background: rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 40px;
+    width: 92%;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  #type_msg {
+      position: relative;
+  }
+  #send_btn {
+    border: medium none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    /*margin-left: -50px;*/
+    border: 0;
+   -webkit-appearance: none;
+  }
+  
+  
+  .bot-content{
+    max-height: 300px;
+    padding-bottom: 5px;
+    overflow: auto; 
+  }
+  
+  
+  /***** Footer *****/
+  
+  .footer-top {
+    padding: 60px 0; 
+    background: #202020; 
+    text-align: justify; 
+    color: #9C9C9C; 
+  }
+  .footer-top h3 {
+    padding-bottom: 1rem; 
+    color: #ffffff; 
+  }
+  
+  .footer-about img.logo-footer {
+    max-width: 100px; 
+    margin-top: 0; 
+    margin-bottom: 18px; 
+  }
+  
+  .footer-about p a {
+    color: #9C9C9C;
+    border-bottom: 1px dashed; 
+  }
+  
+  .footer-about p a:hover, .footer-about p a:focus {
+    color: #ffffff;
+    border-color: #9C9C9C;
+  }
+  
+  .footer-contact p {
+    word-wrap: break-word;
+  }
+  .footer-contact i {
+    padding-right: 10px;
+    font-size: 18px;
+    color: #666; 
+  }
+  .footer-contact p a {
+    color: #9C9C9C; 
+    border-bottom: 1px dashed #666; 
+  }
+  .footer-contact p a:hover, .footer-contact p a:focus {
+    color: #ffffff;
+    border-color: #9C9C9C;
+  }
+  
+  .footer-bottom {
+    padding: 15px 0; 
+    background: #282828;
+    text-align: center;
+    color: #9C9C9C; 
+  }
+  .footer-copyright p {
+    margin: 0;
+    padding: 0.5rem 0; 
+  }
+  .footer-copyright a {
+    color: #ffffff;
+    border: 0; 
+  }
+  .footer-copyright a:hover, .footer-copyright a:focus {
+    color: #9C9C9C; 
+    border: 0; 
+  }
+  

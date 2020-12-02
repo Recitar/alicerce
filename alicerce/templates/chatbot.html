@@ -1,0 +1,57 @@
+{% block chatbot %} 
+  <section id="chatbot">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mx-auto">
+            <h2>Chatbot</h2>
+            <p class="lead">Atualmente o nosso bot responde perguntas sobre teses e dissertações, artigos científicos e qualis-periódicos. Você pode 
+                saber mais informações sobre esse projeto no Github. 
+            </p>
+            <p>
+                Observações importantes:
+                <ul>
+                    <li>
+                        Esta aplicação utiliza cookies e precisa deles ativados para funcionar corretamente.
+                    </li>
+                    <li>
+                        A conversa da sessão é expirada após 10 minutos de inatividade, ou seja, caso você esqueça o bot em alguma aba do seu navegador será necessário reiniciar a conversa.
+                    </li>
+                </ul>
+            </p>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <div class="container content">
+                    <div class="card border-light">
+                        <div class="card-header">SucupiraBot</div>
+                        <div class="card-body">
+                            <ul id="chat-list">
+                                <li class="bot">
+                                    <div class="chat-img">
+                                        <img alt="Avatar" src="/static/img/bot-logo.png">
+                                    </div>
+                                    <div class="chat-body">
+                                        <div class="chat-message">
+                                            <h5>SucupiraBot</h5>
+                                            <p>
+                                                Olá, eu estou aqui para te ajudar a consultar informações na plataforma Sucupira. Você pode tentar uma das seguintes perguntas e variações:<br><br>
+                                                <code>
+                                                    <i class="fas fa-tag"></i> Revistas da área de computação com termo evolução. <br>
+                                                    <i class="fas fa-tag"></i> Teses da área de computação com termo redes de computadores. <br>
+                                                    <i class="fas fa-tag"></i> Artigos da área de computação com termo Internet da Coisas. <br>
+                                                </code> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <button id="start" type="button" class="btn btn-primary btn-lg btn-block"><i class="far fa-comment-dots"></i> Iniciar conversa </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+{% endblock %}

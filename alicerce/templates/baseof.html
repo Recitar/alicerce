@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/head.html' %}
+    {% block styles %}{% endblock %}
+    <body>
+        {% if page == "chatbot" %}
+        {% include 'partials/navbar.html' %}
+        {% endif %}
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        {% include 'partials/footer.html' %}
+        {% include 'partials/script.html' %}
+    </body>
+</html>

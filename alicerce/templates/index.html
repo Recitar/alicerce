@@ -1,0 +1,17 @@
+{% extends "baseof.html" %}
+{% block main %}
+<header class="bg-light text-black">
+  <div class="container text-center">
+    <h1 id="main-text">
+      <img src="/static/img/bot-logo.png" alt="bot-logo" class="thumbnail"><br>
+      SucupiraBot <br><small class="text-muted">(Não-oficial)</small>
+    </h1>
+    <p class="lead">
+       Este bot foi construído com o propósito de facilitar o processo de consulta às informações da 
+       <a href="https://sucupira.capes.gov.br/sucupira/" target="_blank">Plataforma Sucupira</a> e todo 
+       conteúdo exibido por ele não reflete as opinões dos autores. Este bot <span class="text-info">não é um bot oficial</span> da plataforma Sucupira.<br>
+    </p>
+  </div>
+</header>
+{% include "chatbot.html" %}
+{% endblock %}

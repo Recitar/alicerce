@@ -1,0 +1,51 @@
+[default]
+TITLE = "alicerce"
+DEBUG = false
+SECRET_KEY = "secret-key"
+BCRYPT_LOG_ROUNDS = 4
+
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+PRESERVE_CONTEXT_ON_EXCEPTION = false
+SWAGGER_UI_DOC_EXPANSION = "list"
+RESTX_MASK_SWAGGER = false
+JSON_SORT_KEYS = false
+
+JWT_ACCESS_TOKEN_EXPIRES = 3600 
+JWT_REFRESH_TOKEN_EXPIRES = 7200
+JWT_SECRET_KEY = 'jwt-secret-string'
+PERMANENT_SESSION_LIFETIME = 600 # Expira a sessão depois de 10 minutos
+
+EXTENSIONS = [
+    "alicerce.ext.db:init_app",
+    "alicerce.ext.migrate:init_app",
+    "alicerce.ext.manage:init_app",
+    "alicerce.ext.bcrypt:init_app",
+    "alicerce.ext.jwt:init_app",
+    "alicerce.ext.login:init_app",
+    "alicerce.ext.admin:init_app",
+    "alicerce.ext.appearance:init_app",
+    "alicerce.ext.limiter:init_app",
+]
+SIMPLELOGIN_HOME_URL = "/admin/"
+SIMPLELOGIN_LOGOUT_URL = "/admin/logout/"
+FLASK_ADMIN_SWATCH = "cosmo"
+ADMIN_NAME = "alicerce (Admin)"
+
+[development]
+TITLE = 'alicerce - DEV'
+DEBUG = true
+HOST = "0.0.0.0"
+PORT = 5000
+RELOADER = true
+
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false
+ADMIN_NAME = "alicerce (admin - dev mode)"
+
+SQLALCHEMY_DATABASE_URI = "sqlite:///alicerce.db"
+
+[production]
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql://...."
